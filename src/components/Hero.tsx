@@ -1,5 +1,9 @@
 "use client";
 
+import dynamic from "next/dynamic";
+
+const HeroMap = dynamic(() => import("./HeroMap"), { ssr: false });
+
 export default function Hero() {
   return (
     <section
@@ -69,12 +73,7 @@ export default function Hero() {
         {/* Floating Data Element */}
         <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden xl:block w-64 border-l border-black bg-white/90 p-4 z-10">
           <div className="w-full aspect-square bg-gray-100 border border-gray-200 mb-2 overflow-hidden relative">
-            <div className="absolute inset-0 bg-grid opacity-40" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="material-symbols-outlined text-6xl text-black opacity-10">
-                grid_4x4
-              </span>
-            </div>
+            <HeroMap />
           </div>
           <div className="flex justify-between text-[10px] font-mono border-t border-black pt-2 mt-2">
             <span>HQ:</span>
