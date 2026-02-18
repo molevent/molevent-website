@@ -53,7 +53,7 @@ export const metadata: Metadata = {
       "We build digital systems, architecture, and interfaces. Web development, AI & LLM, cloud architecture, telemedicine, and more. Based in Chiang Mai, operating globally.",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "MOLEVENT.TECH — System. Architecture. Interface.",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "MOLEVENT.TECH — System Architecture Interface",
     description:
       "We build digital systems, architecture, and interfaces. Web development, AI & LLM, cloud architecture, telemedicine, and more.",
-    images: ["/opengraph-image"],
+    images: ["/og-image.svg"],
     creator: "@moleventtech",
   },
   robots: {
